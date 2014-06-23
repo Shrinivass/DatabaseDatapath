@@ -1,0 +1,308 @@
+200000
+6001215
+looking for rel part
+single rel count1
+merged rel count0
+looking for rel lineitem
+single rel count1
+merged rel count0
+found all relations, .... now checking for all attrs in parsetree
+*** GOOD PARSE TREE!!! ***
+7
+l_partkey
+p_partkey
+l_shipmode
+l_shipmode
+p_container
+p_container
+l_shipinstruct
+singleOr is 0
+0orattr is l_partkey
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+join case estimation
+
+lr = 6001215 rr = 200000
+product is 1.20024e+12
+lattr of l_partkey with 200000 distinct values is found in rel lineitem of size 6001215
+rattr of p_partkey with 200000 distinct values is Found in rel part of size 200000
+numerator is 1.20024e+12 denominator is 200000 with final result of 6.00122e+06
+
+putting ors into and estimate
+dependent ors
+before, result was 1
+after, result was 6.00122e+06
+singleOr is 0
+0orattr is l_shipmode
+or.size is 0
+1orattr is l_shipmode
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 6.00122e+06
+after, result was 1.71463e+06
+singleOr is 0
+0orattr is p_container
+or.size is 0
+1orattr is p_container
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 1.71463e+06
+after, result was 85731.6
+singleOr is 0
+0orattr is l_shipinstruct
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+*** EQUALITY SELECTION
+singleOr is 1
+single value is 0.25
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 85731.6
+after, result was 21432.9
+estimated result is 21432.9
+looking for rel part
+single rel count1
+merged rel count0
+looking for rel lineitem
+single rel count1
+merged rel count0
+found all relations, .... now checking for all attrs in parsetree
+*** GOOD PARSE TREE!!! ***
+singleOr is 0
+0orattr is l_partkey
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+join case estimation
+
+lr = 6001215 rr = 200000
+product is 1.20024e+12
+lattr of l_partkey with 200000 distinct values is found in rel lineitem of size 6001215
+rattr of p_partkey with 200000 distinct values is Found in rel part of size 200000
+numerator is 1.20024e+12 denominator is 200000 with final result of 6.00122e+06
+
+putting ors into and estimate
+dependent ors
+before, result was 1
+after, result was 6.00122e+06
+singleOr is 0
+0orattr is l_shipmode
+or.size is 0
+1orattr is l_shipmode
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 6.00122e+06
+after, result was 1.71463e+06
+singleOr is 0
+0orattr is p_container
+or.size is 0
+1orattr is p_container
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 1.71463e+06
+after, result was 85731.6
+singleOr is 0
+0orattr is l_shipinstruct
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+*** EQUALITY SELECTION
+singleOr is 1
+single value is 0.25
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 85731.6
+after, result was 21432.9
+singleOr is 0
+0orattr is l_partkey
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+join case estimation
+
+lr = 6001215 rr = 200000
+product is 1.20024e+12
+lattr of l_partkey with 200000 distinct values is found in rel lineitem of size 6001215
+rattr of p_partkey with 200000 distinct values is Found in rel part of size 200000
+numerator is 1.20024e+12 denominator is 200000 with final result of 6.00122e+06
+
+putting ors into and estimate
+dependent ors
+before, result was 1
+after, result was 6.00122e+06
+singleOr is 0
+0orattr is l_shipmode
+or.size is 0
+1orattr is l_shipmode
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.142857
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 6.00122e+06
+after, result was 1.71463e+06
+singleOr is 0
+0orattr is p_container
+or.size is 0
+1orattr is p_container
+or.size is 1
+ ors are dependent
+singleOr is 0
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+
+*** EQUALITY SELECTION
+singleOr is 0
+dep, value is 0.025
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 1.71463e+06
+after, result was 85731.6
+singleOr is 0
+0orattr is l_shipinstruct
+or.size is 0
+singleOr is 0
+singleOr is 1
+THERE IS A SINGLE OR
+singleOr is 1
+ ors are dependent
+singleOr is 1
+
+*** EQUALITY SELECTION
+singleOr is 1
+single value is 0.25
+*** EQUALITY SELECTION end with result 
+
+putting ors into and estimate
+dependent ors
+before, result was 85731.6
+after, result was 21432.9
+new relation is partlineitem
+printing merged relations 
+
+21432
+l_partkey => 200000
+l_shipinstruct => 4
+l_shipmode => 7
+p_container => 40
+p_partkey => 200000
+l_partkeynow belongs to partlineitem
+l_shipinstructnow belongs to partlineitem
+l_shipmodenow belongs to partlineitem
+p_containernow belongs to partlineitem
+p_partkeynow belongs to partlineitem
+
+
+****************21432.9******************
+
+
+
